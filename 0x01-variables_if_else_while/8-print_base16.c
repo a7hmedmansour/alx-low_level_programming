@@ -12,11 +12,11 @@ int main(void)
 {
 char number_hex = '0';
 char char_hex = 'a';
-while (char_hex <= 'f' )
+while (char_hex <= 'f')
 {
 if (number_hex <= '9')
 putchar(number_hex);
-else if (number_hex > '9' )
+else if (number_hex > '9')
 {
 putchar(char_hex);
 char_hex++;
