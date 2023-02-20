@@ -1,4 +1,3 @@
-#include <stdio.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
@@ -16,7 +15,7 @@ while (lowercase_letter <= 'z')
 if (lowercase_letter == 'q' || lowercase_letter == 'e')
 lowercase_letter++;
 else
-{	
+{
 putchar(lowercase_letter);
 lowercase_letter++;
 }
