@@ -14,8 +14,8 @@ int number_hex = 0;
 
 while (number_hex <= 9)
 {
-putchar((number_hex/1) + '0');
-if(number_hex < 9)
+putchar((number_hex / 1) + '0');
+if (number_hex < 9)
 {
 putchar(',');
 putchar(' ');
