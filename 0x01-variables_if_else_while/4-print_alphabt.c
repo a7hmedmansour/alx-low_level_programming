@@ -16,8 +16,10 @@ while (lowercase_letter <= 'z')
 if (lowercase_letter == 'q' || lowercase_letter == 'e')
 lowercase_letter++;
 else
+{	
 putchar(lowercase_letter);
 lowercase_letter++;
+}
 }
 putchar('\n');
 return (0);
