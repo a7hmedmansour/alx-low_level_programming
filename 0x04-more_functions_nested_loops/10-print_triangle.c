@@ -14,7 +14,7 @@ else
 {
 for (s = 0; s < size; s++)
 {
-for (b = 0; b < size - s; b++)
+for (b = 1; b < size - s; b++)
 _putchar(32);
 for (h = 0; h <= s; h++)
 _putchar(35);
