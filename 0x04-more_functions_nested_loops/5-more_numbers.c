@@ -10,27 +10,20 @@
  */
 void more_numbers(void)
 {
-char digit1 = '0', digit2 = '0';
-int times = 0, count = 0;
-while (times <= 10)
+int a, b;
+
+for (a = 0; a < 10; a++)
 {
-while (count <= 14)
+for (b = 0; b <= 14; b++)
 {
-_putchar(digit1);
-if (count >= 9)
-digit1 = '1';
-else
-digit1++;
-if (count > 9)
+if (b > 9)
 {
-_putchar(digit2);
-digit2++;
+	_putchar((b / 10) + '0');
 }
-count++;
+
+_putchar((b % 10) + '0');
 }
-times++;
-count = 0;
-digit1 = '0', digit2 = '0';
+
 _putchar('\n');
 }
 }
