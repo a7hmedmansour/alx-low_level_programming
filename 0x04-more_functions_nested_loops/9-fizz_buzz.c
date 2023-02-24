@@ -19,7 +19,7 @@ printf("Fizz");
 else if (count % 5 == 0)
 printf("Buzz");
 else
-printf("%d ", count);
+printf("%d", count);
 if (count != 100)
 printf(" ");
 }
