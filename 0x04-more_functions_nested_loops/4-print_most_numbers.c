@@ -1,13 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code.
+ * print_most_numbers -   a function that prints the numbers,
+ * from 0 to 9, followed by a new line.
+ *Do not print 2 and 4
  *
- * Return: Always 0.
+ *
+ * Return: 0
+ *
  */
-int main(void)
+void print_most_numbers(void)
 {
-    print_most_numbers();
-    return (0);
+int count = 48;
+while (count <= 57)
+{
+if (count != 52 && count != 50)
+_putchar(count);
+count++;
+}
+_putchar('\n');
 }
