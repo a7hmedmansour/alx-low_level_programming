@@ -20,7 +20,7 @@ for (p = 1; p < len; p++)
 a++;
 }
 
-for (i = 0; i < (c / 2); i++)
+for (i = 0; i < (len / 2); i++)
 {
 temp = s[i];
 s[i] = *a;
