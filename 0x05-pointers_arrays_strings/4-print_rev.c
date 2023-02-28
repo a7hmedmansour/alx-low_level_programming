@@ -15,7 +15,7 @@ while (s[len] != '\0')
 len++;
 }
 
-for (i = len; i >= 0; i--)
+for (i = len; i > 0; i--)
 {
 _putchar(s[i]);
 }
