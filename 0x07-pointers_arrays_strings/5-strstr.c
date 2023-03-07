@@ -35,5 +35,5 @@ if (done)
 return (&haystack[i]);
 i++;
 }
-return (&haystack[i]);
+return (NULL);
 }
