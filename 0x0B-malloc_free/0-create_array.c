@@ -13,12 +13,14 @@ if (size > 0)
 {
 char *array;
 array = malloc(sizeof(char) * size);
-for (i = 0; i < size; i++)
-*(array + i) = c;
 if (array == NULL)
 return (NULL);
 else
+{
+for (i = 0; i < size; i++)
+*(array + i) = c;
 return (array);
+}
 }
 else
 return (NULL);
