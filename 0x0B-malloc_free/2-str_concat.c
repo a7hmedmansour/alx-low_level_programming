@@ -29,7 +29,7 @@ else
 {
 size_s1 = strlen(s1);
 size_s2 = strlen(s2);
-size = size_s1 + size_s2;
+size = size_s1 + size_s2 + 1;
 }
 newstr = malloc(sizeof(char) * size);
 if (newstr == NULL)
