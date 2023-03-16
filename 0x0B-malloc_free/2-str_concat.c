@@ -9,29 +9,27 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-int size_s1;
-int size_s2;
-int size;
-int i;
+int size_s1 = 0, size_s2 = 0, size, i;
 char *newstr;
-
 if (s1 == NULL && s2)
 {
-size_s1 = 0;
 size_s2 = strlen(s2);
 size = size_s1 + size_s2 + 1;
 }
 else if (s2 == NULL && s1)
 {
 size_s1 = strlen(s1);
-size_s2 = 0;
+size = size_s1 + size_s2 + 1;
+}
+else if (s2 == NULL && s1 == NULL)
+{
 size = size_s1 + size_s2 + 1;
 }
 else
 {
 size_s1 = strlen(s1);
 size_s2 = strlen(s2);
-size = size_s1 + size_s2 + 1;
+size = size_s1 + size_s2;
 }
 newstr = malloc(sizeof(char) * size);
 if (newstr == NULL)
