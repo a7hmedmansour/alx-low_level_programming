@@ -15,7 +15,7 @@ int size;
 int i;
 char *newstr;
 
-if(s1 == NULL && s2)
+if (s1 == NULL && s2)
 {
 size_s1 = 0;
 size_s2 = strlen(s2);
@@ -33,9 +33,6 @@ size_s1 = strlen(s1);
 size_s2 = strlen(s2);
 size = size_s1 + size_s2 + 1;
 }
-
-
-
 newstr = malloc(sizeof(char) * size);
 if (newstr == NULL)
 return (NULL);
