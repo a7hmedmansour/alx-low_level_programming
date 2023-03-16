@@ -13,7 +13,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-else 
+else
 {
 size = strlen(str) + 1;
 dupstr = malloc(sizeof(char) * size);
